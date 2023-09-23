@@ -1,0 +1,225 @@
+@charset "UTD-8";
+/*
+
+#c5ebd6;
+#83e1ad;
+#3ddc84;
+#2fa866;
+#1a5c37;
+#063d1e;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Arial';
+    --fonte-android: 'Android';
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+a.externo::after{
+    content: '\00A0\1F517';
+}
+p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    padding-top: 40px;    
+}
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.505);
+
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.505);
+
+
+}
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.549);
+}
+nav > a{
+    color: var(--cor0);
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+
+}
+nav > a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+    background-color: var(--cor4);
+
+}
+main{
+    margin: auto;
+    min-height: 300px;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    margin-bottom: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;}
+main img{
+
+    width: 100%;
+}
+main strong{
+    color: var(--cor4);
+    background-color: var(--cor1);
+    font-weight: bold;
+
+}
+main a{
+    padding: 2px 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+main h1{
+
+    text-indent: 8px;
+    background-color: var(--cor3);
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+}
+main h2{
+
+    color: var(--cor4);
+    background-color: var(--cor1);
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    text-indent: 8px;
+    font-weight: normal;
+
+}
+main img.pequena{
+
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57.4%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+
+}
+.irina{
+    border-radius: 05px;
+}
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.507)
+
+}
+aside h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    /*margin negativa faz com que aumente para fora*/
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside ul{ 
+    /*o codigo abaixo serve para inserir emojis*/
+    /*o codigo 2714 e o numero do emoji 
+    pego no emojipidia e o
+    00A0 e o espacamento*/
+    list-style-type: '\2714\00A0';
+
+
+    /*no codigo abaixo faz com que as bolinhas 
+    da lista fique dentro da lista*/
+    list-style-position: inside;
+
+    /*divide o conteudo da lista em duas colunas
+    serve para nao ficar muito grande o conteudo*/
+    columns: 2;
+}
+footer{
+
+    text-align: center;
+    background-color: var(--cor5);
+    color: white;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a{
+    color: white;
+    font-weight: bolder;
+}
+footer a:hover{
+    color: var(--cor2);
+
+}
+
+
+
+
+
